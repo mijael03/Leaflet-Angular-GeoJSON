@@ -1,0 +1,57 @@
+{
+    "type": "FeatureCollection",
+    "crs": {
+        "type": "name",
+        "properties": {
+            "name": "urn:ogc:def:crs:EPSG::4326"
+        }
+    },
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "hjbjhbjhbjhß",
+                "OBJECTID": 1,
+                "CODLOT": "001",
+                "ID_LOTE1": "22078001",
+                "CODMZA": "078",
+                "CODSEC": "22",
+                "Shape_Leng": 264.25541959499998,
+                "Shape_Area": 2803.8778867599999
+            },
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
+                    [
+                        [
+                            [
+                                -71.5453977763,
+                                -16.3528499935
+                            ],
+                            [
+                                -71.544957978,
+                                -16.3529560064
+                            ],
+                            [
+                                -71.5455564333,
+                                -16.3536475133
+                            ],
+                            [
+                                -71.5457734853,
+                                -16.3534673858
+                            ],
+                            [
+                                -71.5455606963,
+                                -16.3533717801
+                            ],
+                            [
+                                -71.5453977763,
+                                -16.3528499935
+                            ]
+                        ]
+                    ]
+                ]
+            }
+        }
+]
+}
