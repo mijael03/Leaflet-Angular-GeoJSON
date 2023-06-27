@@ -48,7 +48,7 @@ export class MapComponent implements AfterViewInit {
     layer.bindPopup(`
     <div>
         <p><strong>OBJECTID:</strong> ${feature.properties.OBJECTID} </p>
-        <p><strong>CODLOT:</strong> ${feature.properties.CODLOT}</p>
+        <p><strong>CODLOT:</strong> <a href=${feature.properties.CODLOT}>LINK</a></p>
         <p><strong>ID_LOTE1:</strong> ${feature.properties.ID_LOTE1}</p>
         <p><strong>CODMZA:</strong> ${feature.properties.CODMZA}</p>
         <p><strong>CODSEC:</strong> ${feature.properties.CODSEC}</p>
