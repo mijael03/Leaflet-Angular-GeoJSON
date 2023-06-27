@@ -10,6 +10,6 @@ export class ShapeService {
     
   }
   getStateShapes() {
-    return this.http.get('/assets/data/lotes_cayma.geojson');
+    return this.http.get('/assets/data/lotes_cayma_updated.geojson');
   }
 }

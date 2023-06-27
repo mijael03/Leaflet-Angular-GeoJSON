@@ -45,10 +45,17 @@ export class MapComponent implements AfterViewInit {
     this.map.addLayer(stateLayer);
   }
   private onEachFeature(feature:any, layer:any){
+    let link: string
+    if(feature.properties.ID == undefined){
+      link = "http://34.125.115.40:4300/admin/property/list/646bcead3999a5c2af2f14ae"
+    }else{
+      link = feature.properties.ID
+    }
     layer.bindPopup(`
     <div>
         <p><strong>OBJECTID:</strong> ${feature.properties.OBJECTID} </p>
-        <p><strong>CODLOT:</strong> <a href=${feature.properties.CODLOT}>LINK</a></p>
+        <p><strong>CODLOT:</strong> ${feature.properties.CODLOT} </p>
+        <p><strong>PREDIO:</strong> <a href=${link}>Detalles..</a></p>
         <p><strong>ID_LOTE1:</strong> ${feature.properties.ID_LOTE1}</p>
         <p><strong>CODMZA:</strong> ${feature.properties.CODMZA}</p>
         <p><strong>CODSEC:</strong> ${feature.properties.CODSEC}</p>
